@@ -1,13 +1,20 @@
-## Pandas Database
-### An extremely simple data storage system for python applications.
+# pd-database
+## An extremely simple data storage system for python applications.
 
-<b>to run in local mode (no dedicated server):</b><br>
-git clone repo<br>
-from pd-database import PandasDatabase<br>
-pdb = PandasDatabase()<br>
+Have a simple database to attach to any python application using only Pandas Dataframes.
 
-<b>to run with a dedicated server:</b><br>
-git clone repo<br>
-docker run db-server<br>
-import pdb-client<br>
-pdb = PDClient()<br>
+## Installation
+
+To use this package, clone the repository to your local machine using the following commands:
+
+```sh
+pip install git+https://github.com/joeraymon/pd-database.git
+```
+
+## Usage
+
+```py
+from pd-database import PandasDatabase
+
+pdb = PandasDatabase()
+```
