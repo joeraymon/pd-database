@@ -1,5 +1,5 @@
 import pandas as pd
-from config import Logger
+from .config import Logger
 
 log = Logger()
 
