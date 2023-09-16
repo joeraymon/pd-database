@@ -14,7 +14,7 @@ pip install git+https://github.com/joeraymon/pd-database.git
 ## Usage
 
 ```py
-from pd-database import PandasDatabase
+from pd_database import PandasDatabase
 
 pdb = PandasDatabase()
 ```
