@@ -45,7 +45,10 @@ class PandasDatabase:
         pd.DataFrame: extracted data
         """
 
-        qualified_table_name = self.qualified_table_name(table_name)
+        qualified_table_name = self.qualified_table_name(table_name, "r")
+
+        if qualified_table_name is None:
+            return None
 
         try:
             df = pd.read_csv(qualified_table_name, index_col=index_col)
@@ -67,7 +70,7 @@ class PandasDatabase:
         None
         """
 
-        qualified_table_name = self.qualified_table_name(table_name)
+        qualified_table_name = self.qualified_table_name(table_name, "w")
 
         if qualified_table_name is None:
             return None
